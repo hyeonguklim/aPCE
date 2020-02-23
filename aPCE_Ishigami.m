@@ -19,8 +19,8 @@ u_b = pi; % upper bound
 inputs = unifrnd(l_b,u_b,[n n_d]);
 
 %% aPCE
-% maximum order of aPCE in iterations
-p_max = 8;
+% aPCE order
+p = 8;
 
 % number of sets for each PCE order
 N_set = 10;
@@ -28,42 +28,40 @@ N_set = 10;
 % number of MCS
 N_mc = 1e4;
 
-% iteration
-for p = p_max
-    for i = 1:N_set
-        % control random seed
-        rng(i)
-        
-        % MCS samples
-        inputs_mc = unifrnd(l_b,u_b,[n N_mc]);
-        
-        % aPCE
-        [c,y] = aPCE(p,inputs,inputs_mc);
-        
-        % save the coefficients
-        C{i,p} = c;
-        
-        % save MCS output
-        Y{i,p} = y;
-    end
+% multiple sets
+for i = 1:N_set
+    % control random seed
+    rng(i)
+    
+    % MCS samples
+    inputs_mc = unifrnd(l_b,u_b,[n N_mc]);
+    
+    % aPCE
+    [c,y] = aPCE(p,inputs,inputs_mc);
+    
+    % save the coefficients
+    C(i,:) = c;
+    
+    % save MCS output
+    Y(i,:) = y;
 end
 
 %% exceedance plots
 figure();hold on;
 for i = 1:N_set
     % control random seed
-    rng(i)
+    rng(i+1000)
     
     % MCS in the exact Ishigami
     Y_mcs = ishigami(unifrnd(l_b,u_b,[n N_mc]));
-
+    
     % empirical cdfs
     [cdf_exact,y_exact] = ecdf(Y_mcs);
-    [cdf_apce,y_apce] = ecdf(Y{i,p_max});
+    [cdf_apce,y_apce] = ecdf(Y(i,:));
     
     % plots
-    f1 = plot(y_exact,1-cdf_exact,'b-','linewidth',2);
-    f2 = plot(y_apce,1-cdf_apce,'r--','linewidth',2);
+    f1 = plot(y_exact,1-cdf_exact,'b-','linewidth',1);
+    f2 = plot(y_apce,1-cdf_apce,'r--','linewidth',1);
 end
 
 % plot setting
@@ -83,7 +81,7 @@ set(gca, ...
     'XTick'       , [-20 -15 -10 -5 0 5 10 15 20 25] , ...
     'XLim'        , [-20 25]  , ...
     'YLim'        , [1/N_mc 1]);
-legend([f1 f2],'MCS',['aPCE (Order= ' num2str(p_max) ')']);legend boxoff
+legend([f1 f2],'MCS',['aPCE (Order= ' num2str(p) ')']);legend boxoff
 set(legend,'interpreter','latex','fontsize',15,'location','southwest')
 xlabel('$y$','interpreter','latex','fontsize',15)
 ylabel('$P(Y>y)$','interpreter','latex','fontsize',15)
