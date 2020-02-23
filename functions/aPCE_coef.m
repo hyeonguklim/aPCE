@@ -1,11 +1,11 @@
 function [C,raw_mom]=aPCE_coef(po,x)
 % input
-% po  = polynomial order
-% x   = data (1 column)
+% po = polynomial order
+% x  = data (1 column)
 %
 % outpout
-% C      = coefficients of a polynomial (highest to lowest)
-% ns   = norm square of polynomial of order po
+% C  = coefficients of a polynomial (highest to lowest)
+% ns = norm square of polynomial of order po
 
 % k-th raw moments
 krm = zeros(1,2*po);
