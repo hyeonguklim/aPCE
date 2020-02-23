@@ -81,8 +81,14 @@ set(gca, ...
     'XTick'       , [-20 -15 -10 -5 0 5 10 15 20 25] , ...
     'XLim'        , [-20 25]  , ...
     'YLim'        , [1/N_mc 1]);
+
+% legend
 legend([f1 f2],'MCS',['aPCE (Order= ' num2str(p) ')']);legend boxoff
 set(legend,'interpreter','latex','fontsize',15,'location','southwest')
+
+% labels
 xlabel('$y$','interpreter','latex','fontsize',15)
 ylabel('$P(Y>y)$','interpreter','latex','fontsize',15)
+
+% saving option
 set(gcf,'PaperPositionMode','auto')
