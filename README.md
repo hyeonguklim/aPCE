@@ -1,7 +1,7 @@
 # Arbitrary polynomial chaos expansion (aPCE)
 
-![](https://github.com/hyeonguklim/aPCE/blob/master/figures/scheme.png)
-**Fig: a schematic of using arbitrary polynomial chaos expansion (aPCE)**
+![](https://github.com/hyeonguklim/aPCE/blob/master/figures/scheme.png)  
+**Fig**: a schematic of using arbitrary polynomial chaos expansion (aPCE)
 
 ## Authors/Collaborators
 [HyeongUk Lim](https://hyeonguk.wordpress.com) and [Lance Manuel](https://lancemanuel.netlify.com)
@@ -20,11 +20,11 @@ This folder contains examples of using aPCE: the [Ishigami function](https://www
 ### subfunctions
 This folder contains the subfunctions needed for running aPCE
 
-#### List:
-- `aPCE.m`: 
-- `aPCE_coef.m`:
-- `ishigami.m`:
-- `multi_index.m`:
+#### Brief descriptions of subfunctions:
+- `aPCE.m`: builds an aPCE model 
+- `aPCE_coef.m`: calculates the coefficients of a polynomial function by the Gram-Schmidt orthogonalization
+- `ishigami.m`: Ishigami function evaluation
+- `multi_index.m`: gives multi-indices needed for multi-variate polynomial functions
 
 ## Contact
 For questions or comments, please email me at: hyeonguklim@gmail.com.
