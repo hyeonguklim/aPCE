@@ -29,7 +29,7 @@ This folder contains the subfunctions needed for running aPCE:
 ### other functions
 - `load_path.m`: sets the path where subfunctions are located
 
-## How to Start
+## How to Run an Example
 1. Clone this repository to your directory
 2. Run `aPCE_Ishigami.m` in MATLAB
 3. You can change parameters, e.g, a polynomial order (`p`)
