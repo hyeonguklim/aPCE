@@ -1,7 +1,7 @@
 # Arbitrary polynomial chaos expansion (aPCE)
 
 ![](https://github.com/hyeonguklim/aPCE/blob/master/figures/scheme.png)  
-**Fig**: a schematic of using arbitrary polynomial chaos expansion (aPCE)
+**Fig**: A schematic of using arbitrary polynomial chaos expansion (aPCE)
 
 ## Authors/Collaborators
 [HyeongUk Lim](https://hyeonguk.wordpress.com) and [Lance Manuel](https://lancemanuel.netlify.com)
@@ -32,5 +32,11 @@ This folder contains the subfunctions needed for running aPCE
 2. Run `aPCE_Ishigami.m` in MATLAB
 3. You can change parameters, e.g, a polynomial order (`p`)
 
+## Sample Figures
+![](https://github.com/hyeonguklim/aPCE/blob/master/figures/exceedance_plot.png)  
+**Fig**: Exceedance probability estimation by aPCE for the Ishigami function
+
+Ten sets of order-8 aPCE surrogate models estimate exceedance probabilities well when compared with ten sets of Monte Carlo simulations in the Ishigami function.
+
 ## Contact
-For questions or comments, please email me at: hyeonguklim@gmail.com.
+For any questions or comments, please email me at: hyeonguklim@gmail.com.
