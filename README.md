@@ -27,6 +27,9 @@ This folder contains the subfunctions needed for running aPCE
 - `ishigami.m`: Ishigami function evaluation
 - `multi_index.m`: gives multi-indices needed for multi-variate polynomial functions
 
+### other functions
+- `load_path.m`: sets the path where subfunctions are located
+
 ## How to Start
 1. Clone this repository to your directory
 2. Run `aPCE_Ishigami.m` in MATLAB
