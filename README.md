@@ -12,15 +12,17 @@ In complex stochastic high-dimensional reliability studies, polynomial chaos exp
 - Lim, H and Manuel, L, Distribution-Free Polynomial Chaos Expansion Surrogate Models for Efficient Structural Reliability Analysis, *Engineering Mechanics Institute Conference*, Pasadena, CA, June 18-21, 2019. [[presentation](https://hyeonguk.files.wordpress.com/2019/07/emi19_presentation.pdf)]
 - Lim, H and Manuel, L, Non-Parametric Surrogate Models for Uncertainty Quantification in Structural Vibration, *Korea Institute of Civil Engineering and Building Technology*, Ilsan, South Korea, Dec 18, 2018.
 
-## Source Codes
+## Codes
 ### examples
-This folder contains examples using aPCE: the Ishigami function.
+This folder contains examples of using aPCE: the [Ishigami function](https://www.sfu.ca/~ssurjano/ishigami.html).
 
 ### subfunctions
-This folder contain the subfunctions needed for aPCE
+This folder contains the subfunctions needed for running aPCE
 
 #### List:
 - `aPCE.m`: 
 - `aPCE_coef.m`:
 - `ishigami.m`:
 - `multi_index.m`:
+
+For questions or comments, please email me at: hyeonguklim@gmail.com.
