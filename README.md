@@ -9,9 +9,11 @@
 ## Description
 In complex stochastic high-dimensional reliability studies, polynomial chaos expansion (PCE) has been widely used to build surrogate models in lieu of prohibitively expensive Monte Carlo simulation (MCS). PCE relies on parametric distributions for associated variables and appropriate basis functions. However, incomplete or imperfect information on the stochastic variables can limit its use; accepted parametric forms for variable distributions, for instance, may not be justified when variables display multimodal character or mixed discrete-continuous support, which can make probabilistic mapping or transformation to independent variables needed for PCE cumbersome. Nonlinearities in such transformations can affect the accuracy of PCE surrogate models and lead to slower convergence relative to "truth" system computations of desired QoIs (quantities of interest). To address these challenges, we compute raw moments of underlying random input variables for Gram-Schmidt orthogonalization in developing surrogate models. Using illustrative examples, we show this approach as an efficient and accurate surrogate model-building alternative to traditional PCE.
 
+[see slides](https://github.com/hyeonguklim/aPCE/blob/master/description/slides_aPCE.pdf)
+
 ## Related Publications/Presentations
 - Lim, H and Manuel, L, Distribution-Free Polynomial Chaos Expansion Surrogate Models for Efficient Structural Reliability Analysis, *Engineering Mechanics Institute Conference*, Pasadena, CA, June 18-21, 2019. [[presentation](https://hyeonguk.files.wordpress.com/2019/07/emi19_presentation.pdf)]
-- Lim, H and Manuel, L, Non-Parametric Surrogate Models for Uncertainty Quantification in Structural Vibration, *Korea Institute of Civil Engineering and Building Technology*, Ilsan, South Korea, Dec 18, 2018.
+- Lim, H and Manuel, L, Non-Parametric Surrogate Models for Uncertainty Quantification in Structural Vibration, *Korea Institute of Civil Engineering and Building Technology*, Ilsan, South Korea, Dec 18, 2018. [[presentation](https://hyeonguk.files.wordpress.com/2020/02/hyeonguk-lim-kict.pdf)]
 
 ## Codes
 ### examples
