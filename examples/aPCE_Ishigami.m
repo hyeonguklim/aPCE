@@ -11,7 +11,7 @@ rng(0)
 n = 3;
 
 % number of sample data in each variable
-n_d = 100;
+n_d = 1000;
 
 % sample from uniform distributions
 l_b = -pi; % lower bound
