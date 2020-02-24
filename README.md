@@ -35,6 +35,7 @@ This folder contains the subfunctions needed for running aPCE:
 1. Clone this repository to your directory
 2. Run `aPCE_Ishigami.m` in MATLAB
 3. You can change parameters, e.g, a polynomial order (`p`)
+4. You will get an exceedance probability plot
 
 ## Sample Figures
 ![](https://github.com/hyeonguklim/aPCE/blob/master/figures/exceedance_plot.png)  
