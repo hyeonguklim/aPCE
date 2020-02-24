@@ -1,3 +1,7 @@
-# Arbitrary polynomial chaso expansion (aPCE)
+# Arbitrary polynomial chaos expansion (aPCE)
 
-'examples' contains the Ishigami function.
+## `examples`
+This folder contains example functions for the use of aPCE: the Ishigami function.
+
+## `subfunctions`
+This folder contain the subfunctions needed for aPCE
