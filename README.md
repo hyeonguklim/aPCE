@@ -1,6 +1,7 @@
 # Arbitrary polynomial chaos expansion (aPCE)
 
-![alt text](https://github.com/hyeonguklim/aPCE/blob/master/figures/scheme.png)
+![](https://github.com/hyeonguklim/aPCE/blob/master/figures/scheme.png)
+**Fig: a schematic of using arbitrary polynomial chaos expansion (aPCE)**
 
 ## Authors/Collaborators
 [HyeongUk Lim](https://hyeonguk.wordpress.com) and [Lance Manuel](https://lancemanuel.netlify.com)
@@ -25,4 +26,5 @@ This folder contains the subfunctions needed for running aPCE
 - `ishigami.m`:
 - `multi_index.m`:
 
+## Contact
 For questions or comments, please email me at: hyeonguklim@gmail.com.
