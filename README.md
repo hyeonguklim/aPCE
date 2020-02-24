@@ -15,13 +15,12 @@ In complex stochastic high-dimensional reliability studies, polynomial chaos exp
 
 ## Codes
 ### examples
-This folder contains examples of using aPCE
+This folder contains examples of using aPCE:
 - [Ishigami function](https://www.sfu.ca/~ssurjano/ishigami.html): `aPCE_Ishigami.m`
 
 ### subfunctions
-This folder contains the subfunctions needed for running aPCE
+This folder contains the subfunctions needed for running aPCE:
 
-#### Brief descriptions of subfunctions:
 - `aPCE.m`: builds an aPCE model 
 - `aPCE_coef.m`: calculates the coefficients of a polynomial function by the Gram-Schmidt orthogonalization
 - `ishigami.m`: Ishigami function evaluation
